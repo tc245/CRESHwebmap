@@ -59,7 +59,7 @@ sudo shutdown -r now
 
 #to build docker image, run the following to create an image tagged as "creshwebmapper/alcoholtobacco"
 
-sudo docker build -t creshwebmapper/alcoholtobacco .
+sudo docker build -t tc245/cresh-map:latest .
 
 #Then edit the applica
 
