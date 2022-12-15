@@ -53,4 +53,13 @@ sudo service nginx restart
 
 sudo shutdown -r now
 
+#########################
+##Updates from Dec 2022##
+#########################
+
+#to build docker image, run the following to create an image tagged as "creshwebmapper/alcoholtobacco"
+
+sudo docker build -t creshwebmapper/alcoholtobacco .
+
+#Then edit the applica
 
