@@ -27,7 +27,7 @@ RUN R -q -e "install.packages(c('leaflet', 'leaflet.extras', 'shinyjs', 'rgdal',
     
 RUN R -q -e "install.packages(c('DT', 'BAMMtools', 'rgeos', 'tidyverse', 'mongolite', 'shinyWidgets', 'devtools'))"
 
-RUN R -q -e "devtools::install_github('hrbrmstr/ipapi')
+RUN R -q -e "devtools::install_github('hrbrmstr/ipapi')"
 
 # install dependencies of the euler app
 RUN R -q -e "install.packages('Rmpfr')"
