@@ -22,6 +22,12 @@ RUN apt-get update && apt-get install -y \
 # basic shiny functionality
 RUN R -q -e "install.packages(c('shiny', 'rmarkdown'))"
 
+#Mapper specific dependencies
+RUN R -q -e "install.packages(c('leaflet', 'leaflet.extras', 'shinyjs', 'rgdal', 'shinyBS', 'gtools',\
+    'DT', 'BAMMtools', 'rgeos', 'tidyverse', 'mongolite', 'shinyWidgets', 'devtools'))"
+
+RUN R -q -e "devtools::install_github('hrbrmstr/ipapi')
+
 # install dependencies of the euler app
 RUN R -q -e "install.packages('Rmpfr')"
 
